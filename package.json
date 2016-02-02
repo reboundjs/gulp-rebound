@@ -1,6 +1,6 @@
 {
   "name": "gulp-rebound",
-  "version": "1.0.0",
+  "version": "1.2.0",
   "description": "Gulp plugin for the Rebound compiler",
   "main": "index.js",
   "scripts": {
@@ -23,7 +23,7 @@
   "homepage": "https://github.com/reboundjs/gulp-rebound",
   "dependencies": {
     "gulp-util": "^3.0.6",
-    "reboundjs": "0.0.90",
+    "reboundjs": "0.2.0",
     "through2": "^2.0.0"
   }
 }

@@ -1,6 +1,6 @@
 var through = require('through2');
 var gutil = require('gulp-util');
-var rebound = require('reboundjs');
+var rebound = require('reboundjs').default;
 var PluginError = gutil.PluginError;
 
 // Consts
@@ -31,7 +31,7 @@ function gulpRebound(options) {
       file.contents = new Buffer(rebound(file.contents.toString(enc), {
         name: file.path,
         baseDest: options.baseUrl || ''
-      }), enc);
+      }).src, enc);
       gutil.log(gutil.colors.green('File ' + file.relative + ' compiled'));
       file.path = file.path.replace('.html', '.js');
     } catch(err){
